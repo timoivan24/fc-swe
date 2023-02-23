@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Homemade Website with RevoU</title>
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <header>
+      <nav class="header-container">
+        <img
+          src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+          width="40"
+          height="40"
+        />
+        <div class="header-menu">
+          <a href="index.html" class="href">Home</a>
+          <a href="profile.html" class="href">Our Profile</a>
+          <a href="#" class="href">Portfolio</a>
+          <a href="#" class="href">Message Us</a>
+        </div>
+      </nav>
+      <hr class="hero-line" />
+    </header>
+    <!-- NAV BAR -->
+
+    <!-- CONTENT -->
+    <main>
+      <!-- HERO -->
+      <section id="hero">
+        <div class="hero_Container">
+          <div class="hero">
+            <h1 class="hero_title">Hi <span id="nama"></span>, Welcome to Homepage</h1>
+            <p class="hero_p">Ini website latihan pertama</p>
+            <img class="hero_img" src="/assets/hero.jpg" alt="hero image" />
+          </div>
+        </div>
+        <hr class="hero_line" />
+      </section>
+      <!-- HERO -->
+
+      <!-- HEADQUARTER -->
+      <section id="headquarter">
+        <div class="headquater_Container">
+          <div class="headquarter-head">
+            <h1 class="headquarter-title">Our Headquarter</h1>
+            <div class="headquarter-gallery">
+              <div class="city">
+                <img src="http://placekitten.com/200/200" alt="" />
+                <h3>Jakarta</h3>
+              </div>
+              <div class="city">
+                <img src="http://placekitten.com/200/200" alt="" />
+                <h3>Bandung</h3>
+              </div>
+              <div class="city">
+                <img src="http://placekitten.com/200/200" alt="" />
+                <h3>Surabaya</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HEADQUARTER -->
+    </main>
+    <!-- CONTENT -->
+
+    <div class="messageus-title">
+      <h1>MESSAGE US</h1>
+    </div>
+
+    <div class="form-container">
+      <div class="form">
+        <form name="message-form" onsubmit="return validateForm()">
+          Nama:
+          <input placeholder="Nama" type="text" name="full-name" />
+          <br />
+
+          Tanggal Lahir:
+          <input type="date" name="birth-date" />
+          <br />
+
+          Jenis Kelamin:
+          <input type="radio" id="Laki-Laki" name="gender" value="male" />
+          <label for="male">Laki-Laki</label>
+          <input type="radio" id="Perempuan" name="gender" value="female" />
+          <label for="female">Perempuan</label>
+          <br />
+
+          Pesan:
+          <textarea placeholder="Pesan" name="messages"></textarea>
+          <br />
+
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+      <div class="form-output">
+        <p>Current Time: <span id="time"></span></p>
+        <br />
+        <p>Nama: <span id="sender-full-name"></span></p>
+        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+        <p>Pesan: <span id="sender-messages"></span></p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer">
+          <p>RevoU 2023</p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+  </body>
+  <script src="/js/index.js"></script>
+</html>
