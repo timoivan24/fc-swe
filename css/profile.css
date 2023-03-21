@@ -128,6 +128,11 @@ table {
   border-spacing: 0;
 }
 
+/* responsive */
+@media only screen and (max-width: 600px) {
+  
+}
+
 /* header */
 header {
   background-color: white;
@@ -135,10 +140,12 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  border-bottom: 2px solid black;
 }
 .header-container {
   margin: 10px;
   display: flex;
+
 }
 .header-menu {
   display: flex;
@@ -149,6 +156,8 @@ header {
 }
 .header-container > img {
   margin-right: auto;
+  width: 40px;
+  height: 40px;
 }
 .header-menu > a {
   background-color: white;
@@ -168,4 +177,15 @@ a:active {
 .profile {
   flex-direction: row;
   display: flex;
+}
+
+/* main */
+main {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

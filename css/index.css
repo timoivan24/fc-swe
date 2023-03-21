@@ -131,9 +131,7 @@ table {
 
 /* responsive */
 @media only screen and (max-width: 600px) {
-  .header-container {
-    flex-direction: column;
-  }
+  
 }
 
 /* header */
@@ -143,6 +141,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  border-bottom: 2px solid black;
 }
 .header-container {
   margin: 10px;
@@ -157,6 +156,8 @@ header {
 }
 .header-container > img {
   margin-right: auto;
+  width: 40px;
+  height: 40px;
 }
 .header-menu > a {
   background-color: white;
@@ -167,7 +168,8 @@ header {
   display: inline-block;
   border-radius: 10px;
 }
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: yellow;
 }
 
@@ -226,6 +228,7 @@ a:hover, a:active {
 /* message us */
 .messageus-title {
   display: flex;
+  padding-left: 40px;
   padding-bottom: 10px;
 }
 
